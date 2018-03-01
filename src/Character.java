@@ -8,10 +8,22 @@ public class Character {
 	private String notes;
 	
 	/**
-	 * Constructor for Character
+	 * Constructor for Characters with IDs already
 	 */
 	public Character(int id, String name, String universe, boolean inVersion1, boolean inVersion4, String notes) {
 		this.id = id;
+		this.name = name;
+		this.universe = universe;
+		this.inVersion1 = inVersion1;
+		this.inVersion4 = inVersion4;
+		this.notes = notes;
+	}
+	
+	/**
+	 * Constructor for Characters without IDS already.
+	 */
+	public Character(String name, String universe, boolean inVersion1, boolean inVersion4, String notes) {
+		this.id = -1;
 		this.name = name;
 		this.universe = universe;
 		this.inVersion1 = inVersion1;
